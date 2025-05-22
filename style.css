@@ -1,0 +1,403 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+body::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 150px) center;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    opacity: 0.4;
+}
+
+.container {
+    width: 950px;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+}
+
+.container__contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.container__informaciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    padding-right: 2rem;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.numero-ronda,
+.nombre-jugador {
+    font-size: 18px;
+    color: #9bd5d6;
+    margin-bottom: 10px;
+}
+
+.texto__parrafo {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.texto__intentos {
+    font-size: 16px;
+    color: #CCCCCC;
+    margin-top: 0.5rem;
+}
+
+.container__input {
+    width: 150%;
+    height: 30px;
+    border-radius: 8px;
+    background-color: #FFF;
+    border: none;
+    color: #1875E8;
+    padding: 2rem;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+
+.container__botones {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.juego__boton {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding: 12px 16px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    background: #1875E8;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.juego__boton:disabled {
+    background: #898989;
+}
+
+#finalizarJuego {
+    background: #2f86d3;
+}
+
+#finalizarJuego:hover {
+    background: #1c86b7;
+}
+
+.container__imagen-persona {
+    max-width: 320px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Pantalla de inicio */
+.pantalla-inicio {
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pantalla-inicio__cuadro {
+    width: 950px;
+    height: 650px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+}
+
+.pantalla-inicio__columna-izquierda {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+}
+
+.pantalla-inicio__columna-derecha {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.pantalla-inicio__titulo {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 64px;
+    color: white;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.pantalla-inicio__boton {
+    background: #1875E8;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 75%;
+}
+
+.pantalla-inicio__imagen {
+    max-width: 350px;
+    height: auto;
+    margin-left: 1rem;
+}
+
+input[type="number"] {
+    background-color: white;
+    color: black;
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: 18px;
+    border: none;
+    width: 150px;
+    margin-top: 0.5rem;
+}
+
+/* Pantalla de resultados */
+.pantalla-resultados {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    z-index: 1000;
+}
+
+.pantalla-resultados::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat;
+    background-position: calc(100% + 150px) center;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    opacity: 0.4;
+}
+
+.resultados__cuadro {
+    width: 950px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    border: 1px solid #1875E8;
+    box-shadow: 4px 4px 20px rgba(1, 8, 14, 0.15);
+    background-image: url("img/Ruido.png");
+    background-size: cover;
+    padding: 2rem;
+    position: relative;
+}
+
+.resultados__titulo {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 48px;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #1875E8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.resultados__tabla {
+    width: 100%;
+    margin: 1rem 0;
+    overflow-y: auto;
+    max-height: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+th {
+    background-color: rgba(24, 117, 232, 0.3);
+    font-weight: bold;
+}
+
+tr:nth-child(1) {
+    background-color: rgba(255, 215, 0, 0.2);
+}
+
+tr:nth-child(2) {
+    background-color: rgba(192, 192, 192, 0.2);
+}
+
+tr:nth-child(3) {
+    background-color: rgba(205, 127, 50, 0.2);
+}
+
+.resultados__ganador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    background-color: rgba(24, 117, 232, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #1875E8;
+}
+
+.resultados__ganador h2 {
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+#nombreGanador {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.trofeo {
+    font-size: 48px;
+    margin: 0.5rem 0;
+}
+
+.resultados__boton {
+    background: #1875E8;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 50%;
+}
+
+.resultados__boton:hover {
+    background: #0d5eb9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container, .resultados__cuadro {
+        width: 95%;
+        height: auto;
+        min-height: 500px;
+    }
+
+    .container__contenido {
+        flex-direction: column;
+    }
+
+    .container__informaciones {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .pantalla-inicio__cuadro {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+        min-height: 500px;
+    }
+
+    .pantalla-inicio__columna-izquierda,
+    .pantalla-inicio__columna-derecha {
+        width: 100%;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .pantalla-inicio__titulo {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .pantalla-inicio__boton {
+        width: 100%;
+    }
+
+    .resultados__tabla {
+        max-height: 250px;
+    }
+
+    th, td {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+

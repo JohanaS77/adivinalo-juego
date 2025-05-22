@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>¡Adivínalo!</title>
+</head>
+<body>
+
+<!-- Pantalla de inicio -->
+<div id="pantallaInicio" class="pantalla-inicio">
+    <div class="pantalla-inicio__cuadro">
+        <div class="pantalla-inicio__columna-izquierda">
+            <h1 class="pantalla-inicio__titulo">¡ADIVÍNALO!</h1>
+            <label for="cantidadUsuarios">¿Cuántos van a jugar?</label>
+            <input id="cantidadUsuarios" type="number" min="1" max="10" value="1" />
+            <button id="botonRegistrar" class="pantalla-inicio__boton">Registrar Nombres</button>
+            <button id="botonIniciar" class="pantalla-inicio__boton" disabled>Comenzar</button>
+        </div>
+        <div class="pantalla-inicio__columna-derecha">
+            <img src="img/numeros.png" alt="Números" class="pantalla-inicio__imagen" />
+        </div>
+    </div>
+</div>
+
+<!-- Pantalla de juego -->
+<div class="container" style="display: none;">
+    <div class="container__contenido">
+        <div class="container__informaciones">
+            <div class="container__texto">
+                <h1>Juego del Número Secreto</h1>
+                <p id="numeroRonda" class="numero-ronda">Ronda 1 de 3</p>
+                <p id="nombreJugador" class="nombre-jugador">Turno de:</p>
+                <div class="texto__parrafo">
+                    <p id="mensajeJuego">Indica un número del 1 al 10</p>
+                    <div id="textoIntentos" class="texto__intentos">(Tienes 3 intentos)</div>
+                </div>
+            </div>
+
+            <input type="number" id="valorUsuario" min="1" max="10" class="container__input"/>
+
+            <div class="container__botones">
+                <button class="juego__boton" id="verificar">Intentar</button>
+                <button class="juego__boton" id="reiniciar" disabled>Siguiente Turno</button>
+                <button class="juego__boton" id="finalizarJuego">Ver Resultados</button>
+            </div>
+        </div>
+
+        <img src="./img/ia.png" alt="Imagen de IA" class="container__imagen-persona" id="imagenJuego" />
+    </div>
+</div>
+
+<!-- Pantalla de resultados -->
+<div id="pantallaResultados" class="pantalla-resultados" style="display: none;">
+    <div class="resultados__cuadro">
+        <h1 class="resultados__titulo">Resultados Finales</h1>
+        
+        <div class="resultados__tabla">
+            <table id="tablaResultados">
+                <thead>
+                    <tr>
+                        <th>Posición</th>
+                        <th>Jugador</th>
+                        <th>Ronda 1</th>
+                        <th>Ronda 2</th>
+                        <th>Ronda 3</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="listaResultados">
+                    <!-- Aquí se insertan los resultados dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="resultados__ganador">
+            <h2>🎉¡Felicidades!🏆</h2>
+            <p id="nombreGanador">GANADOR</p>
+            <div class="trofeo"></div>
+        </div>
+        
+        <button id="volverAJugar" class="resultados__boton">Volver a Jugar</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
