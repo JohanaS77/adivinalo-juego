@@ -15,11 +15,10 @@ Bienvenidos al juego interactivo "¡Adivínalo!", desarrollado como proyecto par
 - [📌 Requisitos para la Configuración del Entorno de Pruebas](#-requisitos-para-la-configuración-del-entorno-de-pruebas)
 - [🧪 Instalación y Configuración del Entorno de Pruebas](#-instalación-y-configuración-del-entorno-de-pruebas)
 - [📁 Estructura del Proyecto](#-estructura-del-proyecto)
-- [🚀 Ejecución de Pruebas](#-ejecución-de-pruebas)
-- [📊 Reportes](#-reportes)
+- [🧪 Ejecución de Scripts de Pruebas Automatizadas](#-ejecución-de-scripts-de-pruebas-automatizadas)
 - [📥 Manejo de Descargas](#-manejo-de-descargas)
 - [🧪 Casos de Prueba](#-casos-de-prueba)
-- [🖼️ Evidencias de Pruebas](#-evidencias-de-pruebas)
+- [📸 Evidencias de Pruebas Automatizadas](#-evidencias-de-pruebas-automatizadas)
 - [💡 Recomendaciones](#-recomendaciones)
 - [🧾 Conclusiones](#-conclusiones)
 - [👩‍💻 Desarrolladoras](#-desarrolladoras)
@@ -158,48 +157,187 @@ Los scripts de testing se encuentran organizados por funcionalidad y siguen las 
 
 ---
 
-## 📁 Estructura del proyecto
+## 🗂️ Estructura del Proyecto
 
-├── index.html
-├── style.css
-├── app.js
-├── img/
-│ ├── ia.png
-│ ├── ia2.png
-│ └── ...
+A continuación se presenta la estructura del repositorio publicado en GitHub, organizada para facilitar la comprensión de los diferentes componentes del proyecto:
 
+```
+📁 Evidencias 1
+📁 Evidencias 2
+📁 codigos_pruebas_automatizadas
+📁 img
+📄 app.js
+📄 index.html
+📄 style.css
+```
 
+### 📋 Descripción de Directorios y Archivos
 
----
+- **`Evidencias 1` y `Evidencias 2`**: Contienen capturas de pantalla tomadas durante la ejecución de las pruebas automáticas, documentando los resultados obtenidos en cada caso de prueba.
 
-## ✅ Pruebas automáticas
+- **`codigos_pruebas_automatizadas`**: Carpeta que almacena los archivos `.py` con los scripts de prueba realizados con Selenium y PyAutoGUI para validar el funcionamiento del juego.
 
-El proyecto incluye tres scripts de pruebas automáticas con Selenium + PyAutoGUI:
+- **`img`**: Almacena las imágenes utilizadas en el juego, incluyendo recursos gráficos como las imágenes que aparecen al ganar o perder una partida.
 
-- `test_multijugador.py`: prueba completa con 3 jugadores, 3 rondas, y captura de pantalla por intento.
-- `test_registro_nombre.py`: prueba del prompt de registro de nombre.
-- `test_titulo_juego.py`: verifica que el título del sitio sea “¡Adivínalo!”.
+- **`app.js`**: Archivo JavaScript que contiene toda la lógica del juego, incluyendo la generación de números aleatorios, validación de respuestas y manejo de eventos.
 
-Los archivos están organizados en una carpeta `pruebas-automaticas/`.
+- **`index.html`**: Estructura HTML principal de la aplicación web que define la interfaz de usuario del juego *¡Adivínalo!*.
 
-👉 [Ver pruebas en GitHub](./pruebas-automaticas)
+- **`style.css`**: Hoja de estilos CSS que define la apariencia visual y el diseño responsivo de la aplicación.
 
----
-
-## 🖼️ Evidencias
-
-Las capturas de pantalla generadas automáticamente están guardadas en la carpeta:
-
-Las evidencias generadas automáticamente están guardadas en la carpeta `evidencias/test_multijugador/` dentro del proyecto.
-
-
-Estas evidencias respaldan cada prueba automatizada con imágenes reales de ejecución.
+[🔼 Volver al índice](#-índice)
 
 ---
 
-## 🔄 Volver al inicio
+## 🚀 Ejecución de Scripts de Pruebas Automáticas
 
-[⬆️ Volver al índice](#-índice)
+Para ejecutar las pruebas automatizadas del juego *¡Adivínalo!*, se debe seguir el siguiente procedimiento:
+
+### 📝 Procedimiento de Ejecución
+
+1. **Verificar prerrequisitos**: Confirmar que se encuentren instaladas todas las herramientas necesarias descritas en el apartado [💾 Instalación y Configuración del Entorno de Pruebas](#-instalación-y-configuración-del-entorno-de-pruebas).
+
+2. **Navegar al directorio de pruebas**: Ubicarse dentro de la carpeta `codigos_pruebas_automatizadas` desde la terminal o línea de comandos.
+
+3. **Ejecutar los scripts de prueba**: Utilizar el siguiente comando para ejecutar cualquiera de los archivos de prueba:
+   ```bash
+   python nombre_del_script.py
+   ```
+
+   **Ejemplo de ejecución:**
+   ```bash
+   python test_multijugador.py
+   ```
+
+### 📌 Consideraciones Importantes
+
+- **Navegador requerido**: Las pruebas están desarrolladas específicamente para ejecutarse sobre el navegador **Google Chrome**.
+
+- **Configuración de ChromeDriver**: El archivo `chromedriver.exe` debe estar ubicado en la misma carpeta que los scripts de prueba, o correctamente configurado en la variable de entorno PATH del sistema.
+
+- **Ejecución en primer plano**: Algunos scripts requieren interacción visual directa con la interfaz, por lo que no deben ejecutarse en segundo plano mientras se utiliza el equipo para otras actividades.
+
+- **Generación de evidencias**: Las pruebas capturan screenshots automáticamente durante su ejecución. Estas imágenes se almacenan en las carpetas `Evidencias 1` y `Evidencias 2`, organizadas según el nombre y tipo de cada prueba realizada.
+
+[🔼 Volver al índice](#-índice)
+
+---
+
+## 📥 Manejo de Descargas
+
+Durante la ejecución de los scripts de pruebas automatizadas, se generan automáticamente capturas de pantalla como evidencia del comportamiento de la aplicación. Estas imágenes permiten verificar visualmente los resultados de cada prueba realizada.
+
+Las capturas están organizadas en dos carpetas principales dentro del repositorio: **Evidencias 1** y **Evidencias 2**. Cada una de estas contiene subcarpetas que corresponden a los diferentes scripts de prueba utilizados.
+
+- **Evidencias 1**: Contiene las pruebas iniciales del juego.
+  - `abrir_juego/`
+  - `test_adivinanza_correcta/`
+  - `test_adivinanza_incorrecta/`
+  - `test_elementos_inicio/`
+
+- **Evidencias 2**: Agrupa pruebas más avanzadas o con mayor interacción.
+  - `test_iniciar_juego/`
+  - `test_multijugador/`
+  - `test_registro_nombre/`
+  - `test_titulo_juego/`
+
+Dentro de cada subcarpeta se encuentran las imágenes (pantallazos) capturados durante la ejecución de las pruebas. Cada nombre de archivo refleja el momento exacto de la prueba, por ejemplo: `ronda1_dafne.png` o `resultado_juego.png`.
+
+Estas carpetas están disponibles públicamente en el repositorio, por lo tanto, cualquier usuario puede acceder a ellas para consultar las evidencias y confirmar que las pruebas automatizadas se ejecutaron correctamente.
+
+[🔼 Volver al índice](#-índice)
+
+---
+
+## 🧪 Casos de Prueba
+
+A continuación, se describen los casos de prueba implementados para verificar el correcto funcionamiento del juego en diferentes escenarios. Estas pruebas fueron automatizadas utilizando Selenium, y se desarrollaron con base en los comportamientos esperados del juego.
+
+Cada script evalúa un aspecto específico de la funcionalidad, y sus resultados fueron respaldados con capturas de pantalla que se encuentran en las carpetas de evidencias.
+
+| Nombre del Script                | Descripción                                                                 |
+|----------------------------------|-----------------------------------------------------------------------------|
+| **abrir_juego.py**               | Verifica que el juego cargue correctamente y que la página se abra sin errores. |
+| **test_titulo_juego.py**        | Comprueba que el título del juego se muestre correctamente al cargar la página. |
+| **test_elementos_inicio.py**    | Evalúa que todos los elementos iniciales (botón, input, título) estén visibles. |
+| **test_iniciar_juego.py**       | Simula la interacción del usuario para iniciar el juego tras ingresar su nombre. |
+| **test_registro_nombre.py**     | Verifica que se registre correctamente el nombre ingresado por el jugador. |
+| **test_adivinanza_correcta.py** | Simula una adivinanza correcta y valida que se muestre el mensaje de acierto. |
+| **test_adivinanza_incorrecta.py**| Simula una adivinanza incorrecta y valida que se muestre el mensaje de error. |
+| **test_multijugador.py**        | Ejecuta una sesión de juego en modo multijugador, con múltiples rondas y validación de resultados. |
+
+Cada uno de estos scripts fue estructurado para ejecutarse de forma autónoma y reproducible, asegurando así la confiabilidad de las pruebas en diferentes ejecuciones.
+
+[🔼 Volver al índice](#-índice)
+
+---
+
+## 💡 Recomendaciones
+
+Antes de ejecutar los scripts de prueba automatizada, se sugieren las siguientes recomendaciones para evitar errores y asegurar una correcta ejecución del entorno:
+
+- 🔧 **Verificar la compatibilidad del navegador y del driver**  
+  Asegúrate de que la versión del navegador (Google Chrome o Firefox) coincida con la del driver correspondiente (ChromeDriver o GeckoDriver).
+
+- 🛠️ **Ejecutar cada script en una sesión limpia**  
+  Para evitar interferencias entre pruebas, se recomienda cerrar el navegador completamente antes de ejecutar un nuevo script.
+
+- 📁 **Mantener una estructura organizada**  
+  Las capturas de pantalla se guardan automáticamente en carpetas según el nombre de la prueba. Se sugiere no mover estas carpetas para mantener la organización.
+
+- 🔍 **Supervisar los scripts al ejecutarse**  
+  Como las pruebas no se ejecutan en modo headless, es útil observar el flujo en pantalla para detectar visualmente posibles errores o fallas en la automatización.
+
+- 🧪 **Realizar pruebas en diferentes resoluciones**  
+  Se recomienda probar en distintas resoluciones de pantalla para asegurar que los elementos del juego se muestren correctamente.
+
+- 📸 **Evitar interacciones durante la ejecución**  
+  No mover el mouse ni interactuar con el teclado mientras se ejecutan las pruebas, ya que esto puede alterar los resultados, especialmente cuando se usan librerías como PyAutoGUI.
+
+Estas sugerencias están basadas en la experiencia obtenida durante el desarrollo de este proyecto, y buscan facilitar su uso a futuros usuarios o desarrolladores.
+
+[🔼 Volver al índice](#-índice)
+
+---
+
+## 🧾 Conclusiones
+
+El desarrollo y la implementación de pruebas automatizadas para el juego **Adivínalo** nos permitió afianzar conocimientos fundamentales sobre automatización, control de calidad y herramientas de desarrollo web.
+
+Entre los principales aprendizajes y logros, destacamos los siguientes:
+
+- ✅ Aprendimos a utilizar **Selenium** para controlar navegadores y automatizar acciones como clics, entradas de texto y validación de elementos en pantalla.
+- ✅ Implementamos **PyAutoGUI** para la captura automática de evidencias, permitiendo documentar de manera visual los resultados de cada prueba.
+- ✅ Logramos ejecutar pruebas exitosas tanto en modo individual como en modo multijugador, simulando distintos escenarios del juego.
+- ✅ Estructuramos nuestro proyecto de forma clara, facilitando la navegación y comprensión del código fuente, las evidencias y la documentación.
+- ✅ Mejoramos nuestras habilidades de trabajo colaborativo, dividiendo tareas y documentando cada etapa del proyecto.
+
+En general, este proyecto representó una experiencia enriquecedora que nos permitió aplicar conocimientos teóricos en un caso práctico y real, integrando programación web, automatización y documentación técnica.
+
+[🔼 Volver al índice](#-índice)
+
+---
+
+## 👩‍💻 Desarrolladoras
+
+Este proyecto fue desarrollado por estudiantes del tercer semestre del programa de Tecnología en Análisis y Desarrollo de Software:
+
+| Nombre     | Rol                  | GitHub          |
+|------------|----------------------|------------------|
+| Johana     | Desarrolladora líder | [@JohanaS77](https://github.com/JohanaS77) |
+| Dafne      | Desarrolladora QA    | — |
+
+Ambas participaron activamente en la creación del juego, diseño de pruebas automatizadas, documentación, y presentación del proyecto final.
+
+[🔼 Volver al índice](#-índice)
+
+---
+
+
+
+
+
+
 
 
 
