@@ -17,18 +17,19 @@ Bienvenidos al juego interactivo "¡Adivínalo!", desarrollado como proyecto par
 
 ## 📋 Índice
 
-- [🎮 Descripción del Juego](#-descripción-del-juego)
-- [🛠️ Tecnologías Usadas](#️-tecnologías-usadas)
-- [🧪 Requisitos para la Configuración del Entorno de Pruebas](#-requisitos-para-la-configuración-del-entorno-de-pruebas)
-- [💾 Instalación y Configuración del Entorno de Pruebas](#-instalación-y-configuración-del-entorno-de-pruebas)
-- [🗂️ Estructura del Proyecto](#️-estructura-del-proyecto)
-- [🚀 Ejecución de Scripts de Pruebas Automatizadas](#-ejecución-de-scripts-de-pruebas-automatizadas)
-- [📥 Manejo de Descargas](#-manejo-de-descargas)
-- [🧾 Casos de Prueba](#-casos-de-prueba)
-- [📸 Evidencias de Pruebas Automatizadas](#-evidencias-de-pruebas-automatizadas)
-- [💡 Recomendaciones](#-recomendaciones)
-- [📝 Conclusiones](#-conclusiones)
-- [👩‍💻 Desarrolladoras](#-desarrolladoras)
+- [🎮 Descripción del Juego](#descripción-del-juego)
+- [🛠️ Tecnologías Usadas](#tecnologías-usadas)
+- [🧪 Requisitos para la Configuración del Entorno de Pruebas](#requisitos-para-la-configuración-del-entorno-de-pruebas)
+- [💾 Instalación y Configuración del Entorno de Pruebas](#instalación-y-configuración-del-entorno-de-pruebas)
+- [🗂️ Estructura del Proyecto](#estructura-del-proyecto)
+- [🚀 Ejecución de Scripts de Pruebas Automatizadas](#ejecución-de-scripts-de-pruebas-automatizadas)
+- [📥 Manejo de Descargas](#manejo-de-descargas)
+- [🧾 Casos de Prueba](#casos-de-prueba)
+- [📸 Evidencias de Pruebas Automatizadas](#evidencias-de-pruebas-automatizadas)
+- [💡 Recomendaciones](#recomendaciones)
+- [📝 Conclusiones](#conclusiones)
+- [👩‍💻 Desarrolladoras](#desarrolladoras)
+
 ---
 
 <h2>
