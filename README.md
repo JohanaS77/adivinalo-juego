@@ -1,6 +1,13 @@
-# 🎮 Adivínalo - Juego de Adivinanza de Números
+<h1 align="center">
+  Adivínalo - Juego de Adivinanza de Números
+  <img src="https://github.com/user-attachments/assets/47d228af-1fc6-4578-9421-79325ee6cf49" width="70" style="vertical-align: middle;" />
+</h1>
 
-🎯 [Haz clic aquí para jugar en línea](https://adivinalo-juego.netlify.app/)
+<a href="https://adivinalo-juego.netlify.app/" target="_blank">
+  
+  <img src="https://github.com/user-attachments/assets/180c9412-af8a-4c71-9fcd-beb1b7b7026b" width="70" style="vertical-align: middle;"/>
+  Haz clic aquí para jugar en línea
+</a>
 
 Bienvenidos al juego interactivo "¡Adivínalo!", desarrollado como proyecto para la asignatura de Pruebas de Software.
 
@@ -26,11 +33,16 @@ Bienvenidos al juego interactivo "¡Adivínalo!", desarrollado como proyecto par
 
 ---
 
-## 🎮 Descripción del Juego
+<h2>
+  Descripción del Juego
+  <img src="https://github.com/user-attachments/assets/e543839e-7d97-4638-b236-326e18abb8ee" width="74" style="vertical-align: middle; margin-right: 8px;" />
+  
+</h2>
+
 
 **¡Adivínalo!** es un juego web interactivo desarrollado como proyecto académico para la asignatura de Pruebas de Software. El objetivo principal es que los jugadores adivinen un número secreto entre 1 y 10, en un entorno amigable y competitivo.
 
-### 🧠 ¿Cómo se juega?
+###  ¿Cómo se juega?
 
 - **Selección de jugadores:** Al iniciar, se solicita la cantidad de participantes, permitiendo una experiencia multijugador.
 - **Registro de nombres:** Cada jugador ingresa su nombre, personalizando la partida.
@@ -39,7 +51,7 @@ Bienvenidos al juego interactivo "¡Adivínalo!", desarrollado como proyecto par
 - **Feedback inmediato:** Después de cada intento, se proporciona retroalimentación indicando si el número ingresado es correcto o no.
 - **Resultados finales:** Al concluir las rondas, se presenta una tabla con los resultados de cada jugador, destacando al ganador.
 
-### 🎯 Objetivo del juego
+###  Objetivo del juego
 
 El propósito es fomentar la lógica y la intuición de los jugadores al intentar adivinar el número secreto en el menor número de intentos posibles, promoviendo la competencia sana y el entretenimiento.
 
@@ -49,7 +61,9 @@ El propósito es fomentar la lógica y la intuición de los jugadores al intenta
 
 ---
 
-## ⚙️ Tecnologías usadas
+## Tecnologías usadas <img src="https://github.com/user-attachments/assets/8a1d8ac7-a2f1-4ba8-a216-2806de1e70bd" width="72" style="vertical-align: middle;" />
+
+
 
 Este proyecto combina desarrollo web y pruebas automatizadas. Las tecnologías empleadas fueron:
 
@@ -64,11 +78,12 @@ Este proyecto combina desarrollo web y pruebas automatizadas. Las tecnologías e
 
 ---
 
-## 🧪 Requisitos para la Configuración del entorno de Pruebas
+## Requisitos para la Configuración del Entorno de Pruebas <img src="https://github.com/user-attachments/assets/9702dd0e-76e2-425d-9efc-94061c93739f" width="92" style="vertical-align: middle;" />
+
 
 Para poder ejecutar correctamente las pruebas automatizadas desarrolladas para el juego **¡Adivínalo!**, es necesario contar con los siguientes elementos instalados y configurados en el entorno local:
 
-### 🖥️ Software y herramientas necesarias
+### 🖥 Software y herramientas necesarias
 
 - **Python 3.12 o superior**  
   Lenguaje de programación utilizado para desarrollar los scripts de prueba.
@@ -106,11 +121,16 @@ Para poder ejecutar correctamente las pruebas automatizadas desarrolladas para e
 
 ---
 
-## 💾 Instalación y Configuración del Entorno de Pruebas
+<h2>
+  Instalación y Configuración del Entorno de Pruebas
+  <img src="https://github.com/user-attachments/assets/4675b1d5-bcc5-4ddf-a2d2-82b283ecdf9c" width="44" style="vertical-align: middle;" />
+</h2>
+
+
 
 Este proyecto incluye un conjunto de pruebas automatizadas desarrolladas con Selenium WebDriver para validar la funcionalidad del juego "¡Adivínalo!". La siguiente documentación describe los requisitos y procedimientos necesarios para configurar el entorno de testing.
 
-### 🔧 Requisitos del Sistema
+###  Requisitos del Sistema
 
 **Python 3.12+**  
 Verificar la instalación actual del intérprete:
@@ -118,7 +138,7 @@ Verificar la instalación actual del intérprete:
 python --version
 ```
 
-### 📦 Dependencias del Proyecto
+###  Dependencias del Proyecto
 
 Instalar las librerías requeridas mediante pip:
 
@@ -129,7 +149,7 @@ pip install selenium pyautogui
 **Selenium**: Framework de automatización web para el control programático del navegador  
 **PyAutoGUI**: Librería para automatización de GUI y captura de screenshots durante la ejecución de pruebas
 
-### 🌐 Configuración de WebDriver
+###  Configuración de WebDriver
 
 #### Chrome (Recomendado)
 Descargar ChromeDriver compatible con la versión instalada del navegador Chrome. El ejecutable debe ubicarse en el directorio del proyecto o agregarse al PATH del sistema.
@@ -141,7 +161,7 @@ Para entornos que requieran Firefox, descargar GeckoDriver y configurar las vari
 
 👉 [Descargar GeckoDriver](https://github.com/mozilla/geckodriver/releases)
 
-### ✅ Validación de la Configuración
+###  Validación de la Configuración
 
 Ejecutar cualquier script de prueba para verificar la correcta configuración del entorno:
 
@@ -149,7 +169,7 @@ Ejecutar cualquier script de prueba para verificar la correcta configuración de
 python test_multijugador.py
 ```
 
-### 📁 Estructura de Archivos de Prueba
+###  Estructura de Archivos de Prueba
 
 Los scripts de testing se encuentran organizados por funcionalidad y siguen las convenciones de nomenclatura `test_*.py` para facilitar su identificación y ejecución.
 
@@ -157,7 +177,11 @@ Los scripts de testing se encuentran organizados por funcionalidad y siguen las 
 
 ---
 
-## 🗂️ Estructura del Proyecto
+<h2>
+  Estructura del Proyecto
+  <img src="https://github.com/user-attachments/assets/f3065738-2c76-424c-95e4-69eac600cd9b" width="84" style="vertical-align: middle;" />
+</h2>
+
 
 A continuación se presenta la estructura del repositorio publicado en GitHub, organizada para facilitar la comprensión de los diferentes componentes del proyecto:
 
@@ -171,7 +195,7 @@ A continuación se presenta la estructura del repositorio publicado en GitHub, o
 📄 style.css
 ```
 
-### 📋 Descripción de Directorios y Archivos
+###  Descripción de Directorios y Archivos
 
 - **`Evidencias 1` y `Evidencias 2`**: Contienen capturas de pantalla tomadas durante la ejecución de las pruebas automáticas, documentando los resultados obtenidos en cada caso de prueba.
 
@@ -189,7 +213,7 @@ A continuación se presenta la estructura del repositorio publicado en GitHub, o
 
 ---
 
-## 🚀 Ejecución de Scripts de Pruebas Automáticas
+##  Ejecución de Scripts de Pruebas Automáticas
 
 Para ejecutar las pruebas automatizadas del juego *¡Adivínalo!*, se debe seguir el siguiente procedimiento:
 
@@ -320,14 +344,22 @@ En general, este proyecto representó una experiencia enriquecedora que nos perm
 
 ## 👩‍💻 Desarrolladoras
 
-Este proyecto fue desarrollado por estudiantes del tercer semestre del programa de Tecnología en Análisis y Desarrollo de Software:
+Este proyecto fue desarrollado por Dafne Julieth Cortés y Johana Jazmín Saavedra, estudiantes de tercer semestre en Técnica profesional en programación de aplicaciones de software de la Fundación Universitaria Compensar. Con una participación activa en la creación del juego, diseño de pruebas automatizadas, documentación y presentación del proyecto final.
 
-| Nombre     | Rol                  | GitHub          |
-|------------|----------------------|------------------|
-| Johana     | Desarrolladora líder | [@JohanaS77](https://github.com/JohanaS77) |
-| Dafne      | Desarrolladora QA    | — |
-
-Ambas participaron activamente en la creación del juego, diseño de pruebas automatizadas, documentación, y presentación del proyecto final.
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" style="padding-right: 60px;">
+        <img src="https://github.com/user-attachments/assets/9595bb09-c5cc-4ce8-8a1a-e6bfc3ffd378" width="120" style="border: none;"><br/>
+        <strong>Dafne Julieth Cortés</strong>
+      </td>
+      <td align="center" style="padding-left: 60px;">
+        <img src="https://github.com/user-attachments/assets/96a0990c-a533-42c2-9fa2-7224c4eca021" width="120" style="border: none;"><br/>
+        <strong>Johana Jazmín Saavedra</strong>
+      </td>
+    </tr>
+  </table>
+</div>
 
 [🔼 Volver al índice](#-índice)
 
