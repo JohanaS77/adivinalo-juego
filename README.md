@@ -163,13 +163,14 @@ Los scripts de testing se encuentran organizados por funcionalidad y siguen las 
 
 A continuación se presenta la estructura del repositorio publicado en GitHub, organizada para facilitar la comprensión de los diferentes componentes del proyecto:
 
-📁 Evidencias 1
-📁 Evidencias 2
-📁 codigos_pruebas_automatizadas
-📁 img
-📄 app.js
-📄 index.html
-📄 style.css
+- 📁 Evidencias 1  
+- 📁 Evidencias 2  
+- 📁 codigos_pruebas_automatizadas  
+- 📁 img  
+- 📄 app.js  
+- 📄 index.html  
+- 📄 style.css  
+
 
 ###  Descripción de Directorios y Archivos
 
