@@ -17,27 +17,22 @@ Bienvenidos al juego interactivo "¡Adivínalo!", desarrollado como proyecto par
 
 ## 📋 Índice
 
-- [🎮 Descripción del Juego](#descripción-del-juego)
-- [🛠️ Tecnologías Usadas](#tecnologías-usadas)
-- [🧪 Requisitos para la Configuración del Entorno de Pruebas](#requisitos-para-la-configuración-del-entorno-de-pruebas)
-- [💾 Instalación y Configuración del Entorno de Pruebas](#instalación-y-configuración-del-entorno-de-pruebas)
-- [🗂️ Estructura del Proyecto](#estructura-del-proyecto)
-- [🚀 Ejecución de Scripts de Pruebas Automatizadas](#ejecución-de-scripts-de-pruebas-automatizadas)
-- [📥 Manejo de Descargas](#manejo-de-descargas)
-- [🧾 Casos de Prueba](#casos-de-prueba)
-- [📸 Evidencias de Pruebas Automatizadas](#evidencias-de-pruebas-automatizadas)
-- [💡 Recomendaciones](#recomendaciones)
-- [📝 Conclusiones](#conclusiones)
-- [👩‍💻 Desarrolladoras](#desarrolladoras)
+- [🎮 Descripción del Juego](#-descripción-del-juego)
+- [🛠️ Tecnologías usadas](#-tecnologías-usadas)
+- [🧪 Requisitos para la Configuración del Entorno de Pruebas](#-requisitos-para-la-configuración-del-entorno-de-pruebas)
+- [💾 Instalación y Configuración del Entorno de Pruebas](#-instalación-y-configuración-del-entorno-de-pruebas)
+- [🗂️ Estructura del Proyecto](#-estructura-del-proyecto)
+- [🚀 Ejecución de Scripts de Pruebas Automáticas](#-ejecución-de-scripts-de-pruebas-automáticas)
+- [📥 Manejo de Descargas](#-manejo-de-descargas)
+- [🧾 Casos de Prueba](#-casos-de-prueba)
+- [💡 Recomendaciones](#-recomendaciones)
+- [📝 Conclusiones](#-conclusiones)
+- [👩‍💻 Desarrolladoras](#-desarrolladoras)
+- [🔼 Volver al índice](#-índice)
 
 ---
 
-<h2>
-  Descripción del Juego
-  <img src="https://github.com/user-attachments/assets/e543839e-7d97-4638-b236-326e18abb8ee" width="74" style="vertical-align: middle; margin-right: 8px;" />
-  
-</h2>
-
+## <img src="https://github.com/user-attachments/assets/e543839e-7d97-4638-b236-326e18abb8ee" width="30" /> Descripción del Juego
 
 **¡Adivínalo!** es un juego web interactivo desarrollado como proyecto académico para la asignatura de Pruebas de Software. El objetivo principal es que los jugadores adivinen un número secreto entre 1 y 10, en un entorno amigable y competitivo.
 
@@ -60,9 +55,7 @@ El propósito es fomentar la lógica y la intuición de los jugadores al intenta
 
 ---
 
-## Tecnologías usadas <img src="https://github.com/user-attachments/assets/8a1d8ac7-a2f1-4ba8-a216-2806de1e70bd" width="72" style="vertical-align: middle;" />
-
-
+## <img src="https://github.com/user-attachments/assets/8a1d8ac7-a2f1-4ba8-a216-2806de1e70bd" width="30" /> Tecnologías usadas
 
 Este proyecto combina desarrollo web y pruebas automatizadas. Las tecnologías empleadas fueron:
 
@@ -77,12 +70,11 @@ Este proyecto combina desarrollo web y pruebas automatizadas. Las tecnologías e
 
 ---
 
-## Requisitos para la Configuración del Entorno de Pruebas <img src="https://github.com/user-attachments/assets/9702dd0e-76e2-425d-9efc-94061c93739f" width="92" style="vertical-align: middle;" />
-
+## <img src="https://github.com/user-attachments/assets/9702dd0e-76e2-425d-9efc-94061c93739f" width="50" /> Requisitos para la Configuración del Entorno de Pruebas
 
 Para poder ejecutar correctamente las pruebas automatizadas desarrolladas para el juego **¡Adivínalo!**, es necesario contar con los siguientes elementos instalados y configurados en el entorno local:
 
-### 🖥 Software y herramientas necesarias
+###  Software y herramientas necesarias
 
 - **Python 3.12 o superior**  
   Lenguaje de programación utilizado para desarrollar los scripts de prueba.
@@ -92,23 +84,22 @@ Para poder ejecutar correctamente las pruebas automatizadas desarrolladas para e
 
 - **ChromeDriver**  
   Driver compatible con la versión de Google Chrome instalada.  
-  Es indispensable que el archivo `chromedriver.exe` esté en la misma carpeta que los scripts o agregado al PATH del sistema.  
+  Es indispensable que el archivo chromedriver.exe esté en la misma carpeta que los scripts o agregado al PATH del sistema.  
   👉 [Descargar ChromeDriver](https://sites.google.com/chromium.org/driver/)
 
 - **Selenium**  
   Biblioteca que permite controlar el navegador de forma automática.  
-  Se instala con el siguiente comando:  
-  ```bash
+  Se instala con el siguiente comando:
+    
+bash
   pip install selenium
-  ```
 
 - **PyAutoGUI**  
   Librería utilizada para capturar pantallazos durante la ejecución de las pruebas.  
   Se instala con:
-  ```bash
-  pip install pyautogui
   
-  ```
+bash
+  pip install pyautogui
 
 - **Extensión de Firefox y Geckodriver** *(opcional)*  
   Aunque el proyecto se ejecutó principalmente con Google Chrome, también es posible utilizar Firefox instalando:
@@ -120,12 +111,7 @@ Para poder ejecutar correctamente las pruebas automatizadas desarrolladas para e
 
 ---
 
-<h2>
-  Instalación y Configuración del Entorno de Pruebas
-  <img src="https://github.com/user-attachments/assets/4675b1d5-bcc5-4ddf-a2d2-82b283ecdf9c" width="44" style="vertical-align: middle;" />
-</h2>
-
-
+## <img src="https://github.com/user-attachments/assets/4675b1d5-bcc5-4ddf-a2d2-82b283ecdf9c" width="30" /> Instalación y Configuración del Entorno de Pruebas
 
 Este proyecto incluye un conjunto de pruebas automatizadas desarrolladas con Selenium WebDriver para validar la funcionalidad del juego "¡Adivínalo!". La siguiente documentación describe los requisitos y procedimientos necesarios para configurar el entorno de testing.
 
@@ -133,17 +119,15 @@ Este proyecto incluye un conjunto de pruebas automatizadas desarrolladas con Sel
 
 **Python 3.12+**  
 Verificar la instalación actual del intérprete:
-```bash
+bash
 python --version
-```
 
 ###  Dependencias del Proyecto
 
 Instalar las librerías requeridas mediante pip:
 
-```bash
+bash
 pip install selenium pyautogui
-```
 
 **Selenium**: Framework de automatización web para el control programático del navegador  
 **PyAutoGUI**: Librería para automatización de GUI y captura de screenshots durante la ejecución de pruebas
@@ -164,26 +148,21 @@ Para entornos que requieran Firefox, descargar GeckoDriver y configurar las vari
 
 Ejecutar cualquier script de prueba para verificar la correcta configuración del entorno:
 
-```bash
+bash
 python test_multijugador.py
-```
 
 ###  Estructura de Archivos de Prueba
 
-Los scripts de testing se encuentran organizados por funcionalidad y siguen las convenciones de nomenclatura `test_*.py` para facilitar su identificación y ejecución.
+Los scripts de testing se encuentran organizados por funcionalidad y siguen las convenciones de nomenclatura test_*.py para facilitar su identificación y ejecución.
 
 [🔼 Volver al índice](#índice)
 
 ---
 
-<h2>
-  Estructura del Proyecto
-  <img src="https://github.com/user-attachments/assets/5fb60d18-40d0-491c-8945-3113559ff4cf" width="108" style="vertical-align: middle;" />
-</h2>
+## <img src="https://github.com/user-attachments/assets/5fb60d18-40d0-491c-8945-3113559ff4cf" width="60" /> Estructura del Proyecto
 
 A continuación se presenta la estructura del repositorio publicado en GitHub, organizada para facilitar la comprensión de los diferentes componentes del proyecto:
 
-```
 📁 Evidencias 1
 📁 Evidencias 2
 📁 codigos_pruebas_automatizadas
@@ -191,87 +170,78 @@ A continuación se presenta la estructura del repositorio publicado en GitHub, o
 📄 app.js
 📄 index.html
 📄 style.css
-```
 
 ###  Descripción de Directorios y Archivos
 
-- **`Evidencias 1` y `Evidencias 2`**: Contienen capturas de pantalla tomadas durante la ejecución de las pruebas automáticas, documentando los resultados obtenidos en cada caso de prueba.
+- **Evidencias 1 y Evidencias 2**: Contienen capturas de pantalla tomadas durante la ejecución de las pruebas automáticas, documentando los resultados obtenidos en cada caso de prueba.
 
-- **`codigos_pruebas_automatizadas`**: Carpeta que almacena los archivos `.py` con los scripts de prueba realizados con Selenium y PyAutoGUI para validar el funcionamiento del juego.
+- **codigos_pruebas_automatizadas**: Carpeta que almacena los archivos .py con los scripts de prueba realizados con Selenium y PyAutoGUI para validar el funcionamiento del juego.
 
-- **`img`**: Almacena las imágenes utilizadas en el juego, incluyendo recursos gráficos como las imágenes que aparecen al ganar o perder una partida.
+- **img**: Almacena las imágenes utilizadas en el juego, incluyendo recursos gráficos como las imágenes que aparecen al ganar o perder una partida.
 
-- **`app.js`**: Archivo JavaScript que contiene toda la lógica del juego, incluyendo la generación de números aleatorios, validación de respuestas y manejo de eventos.
+- **app.js**: Archivo JavaScript que contiene toda la lógica del juego, incluyendo la generación de números aleatorios, validación de respuestas y manejo de eventos.
 
-- **`index.html`**: Estructura HTML principal de la aplicación web que define la interfaz de usuario del juego *¡Adivínalo!*.
+- **index.html**: Estructura HTML principal de la aplicación web que define la interfaz de usuario del juego *¡Adivínalo!*.
 
-- **`style.css`**: Hoja de estilos CSS que define la apariencia visual y el diseño responsivo de la aplicación.
+- **style.css**: Hoja de estilos CSS que define la apariencia visual y el diseño responsivo de la aplicación.
 
 [🔼 Volver al índice](#-índice)
 
 ---
 
-<h2>
-  Ejecución de Scripts de Pruebas Automáticas
-  <img src="https://github.com/user-attachments/assets/3a96506f-6b07-41c2-b1f7-58fa6e3f4c13" width="98" style="vertical-align: middle;" />
-</h2>
+## <img src="https://github.com/user-attachments/assets/3a96506f-6b07-41c2-b1f7-58fa6e3f4c13" width="60" /> Ejecución de Scripts de Pruebas Automáticas
 
 Para ejecutar las pruebas automatizadas del juego *¡Adivínalo!*, se debe seguir el siguiente procedimiento:
 
-### 📝 Procedimiento de Ejecución
+###  Procedimiento de Ejecución
 
 1. **Verificar prerrequisitos**: Confirmar que se encuentren instaladas todas las herramientas necesarias descritas en el apartado [Instalación y Configuración del Entorno de Pruebas](#-instalación-y-configuración-del-entorno-de-pruebas).
 
-2. **Navegar al directorio de pruebas**: Ubicarse dentro de la carpeta `codigos_pruebas_automatizadas` desde la terminal o línea de comandos.
+2. **Navegar al directorio de pruebas**: Ubicarse dentro de la carpeta codigos_pruebas_automatizadas desde la terminal o línea de comandos.
 
 3. **Ejecutar los scripts de prueba**: Utilizar el siguiente comando para ejecutar cualquiera de los archivos de prueba:
-   ```bash
+   
+bash
    python nombre_del_script.py
-   ```
 
    **Ejemplo de ejecución:**
-   ```bash
+   
+bash
    python test_multijugador.py
-   ```
 
 ###  Consideraciones Importantes
 
 - **Navegador requerido**: Las pruebas están desarrolladas específicamente para ejecutarse sobre el navegador **Google Chrome**.
 
-- **Configuración de ChromeDriver**: El archivo `chromedriver.exe` debe estar ubicado en la misma carpeta que los scripts de prueba, o correctamente configurado en la variable de entorno PATH del sistema.
+- **Configuración de ChromeDriver**: El archivo chromedriver.exe debe estar ubicado en la misma carpeta que los scripts de prueba, o correctamente configurado en la variable de entorno PATH del sistema.
 
 - **Ejecución en primer plano**: Algunos scripts requieren interacción visual directa con la interfaz, por lo que no deben ejecutarse en segundo plano mientras se utiliza el equipo para otras actividades.
 
-- **Generación de evidencias**: Las pruebas capturan screenshots automáticamente durante su ejecución. Estas imágenes se almacenan en las carpetas `Evidencias 1` y `Evidencias 2`, organizadas según el nombre y tipo de cada prueba realizada.
+- **Generación de evidencias**: Las pruebas capturan screenshots automáticamente durante su ejecución. Estas imágenes se almacenan en las carpetas Evidencias 1 y Evidencias 2, organizadas según el nombre y tipo de cada prueba realizada.
 
 [🔼 Volver al índice](#-índice)
 
 ---
 
-<h2>
-  Manejo de Descargas
-  <img src="https://github.com/user-attachments/assets/bc8034a5-37ee-4c1e-9a6f-9373f08af0fd" width="78" style="vertical-align: middle;" />
-</h2>
-
-
+## <img src="https://github.com/user-attachments/assets/bc8034a5-37ee-4c1e-9a6f-9373f08af0fd" width="50" /> Manejo de Descargas
 
 Durante la ejecución de los scripts de pruebas automatizadas, se generan automáticamente capturas de pantalla como evidencia del comportamiento de la aplicación. Estas imágenes permiten verificar visualmente los resultados de cada prueba realizada.
 
 Las capturas están organizadas en dos carpetas principales dentro del repositorio: **Evidencias 1** y **Evidencias 2**. Cada una de estas contiene subcarpetas que corresponden a los diferentes scripts de prueba utilizados.
 
 - **Evidencias 1**: Contiene las pruebas iniciales del juego.
-  - `abrir_juego/`
-  - `test_adivinanza_correcta/`
-  - `test_adivinanza_incorrecta/`
-  - `test_elementos_inicio/`
+  - abrir_juego/
+  - test_adivinanza_correcta/
+  - test_adivinanza_incorrecta/
+  - test_elementos_inicio/
 
 - **Evidencias 2**: Agrupa pruebas más avanzadas o con mayor interacción.
-  - `test_iniciar_juego/`
-  - `test_multijugador/`
-  - `test_registro_nombre/`
-  - `test_titulo_juego/`
+  - test_iniciar_juego/
+  - test_multijugador/
+  - test_registro_nombre/
+  - test_titulo_juego/
 
-Dentro de cada subcarpeta se encuentran las imágenes (pantallazos) capturados durante la ejecución de las pruebas. Cada nombre de archivo refleja el momento exacto de la prueba, por ejemplo: `ronda1_dafne.png` o `resultado_juego.png`.
+Dentro de cada subcarpeta se encuentran las imágenes (pantallazos) capturados durante la ejecución de las pruebas. Cada nombre de archivo refleja el momento exacto de la prueba, por ejemplo: ronda1_dafne.png o resultado_juego.png.
 
 Estas carpetas están disponibles públicamente en el repositorio, por lo tanto, cualquier usuario puede acceder a ellas para consultar las evidencias y confirmar que las pruebas automatizadas se ejecutaron correctamente.
 
@@ -279,13 +249,7 @@ Estas carpetas están disponibles públicamente en el repositorio, por lo tanto,
 
 ---
 
-<h2>
-  Casos de Prueba
-  <img src="https://github.com/user-attachments/assets/a5c127be-b90a-4a99-81ee-9d085d92d037" width="78" style="vertical-align: middle;" />
-</h2>
-
-
-
+## <img src="https://github.com/user-attachments/assets/a5c127be-b90a-4a99-81ee-9d085d92d037" width="50" /> Casos de Prueba
 
 A continuación, se describen los casos de prueba implementados para verificar el correcto funcionamiento del juego en diferentes escenarios. Estas pruebas fueron automatizadas utilizando Selenium, y se desarrollaron con base en los comportamientos esperados del juego.
 
@@ -308,10 +272,8 @@ Cada uno de estos scripts fue estructurado para ejecutarse de forma autónoma y 
 
 ---
 
-<h2>
-  Recomendaciones
-  <img src="https://github.com/user-attachments/assets/56c9fb71-68af-45d6-8e15-de3ca8e26266" width="98" style="vertical-align: middle;" />
-</h2>
+## <img src="https://github.com/user-attachments/assets/56c9fb71-68af-45d6-8e15-de3ca8e26266" width="60" /> Recomendaciones
+
 
 
 Antes de ejecutar los scripts de prueba automatizada, se sugieren las siguientes recomendaciones para evitar errores y asegurar una correcta ejecución del entorno:
@@ -340,10 +302,8 @@ Estas sugerencias están basadas en la experiencia obtenida durante el desarroll
 
 ---
 
-<h2>
-  Conclusiones
-  <img src="https://github.com/user-attachments/assets/42e50dd0-3e79-40a5-980f-0eeee5e23a85" width="58" style="vertical-align: middle;" />
-</h2>
+## <img src="https://github.com/user-attachments/assets/42e50dd0-3e79-40a5-980f-0eeee5e23a85" width="40" /> Conclusiones
+
 
 
 
@@ -363,9 +323,7 @@ En general, este proyecto representó una experiencia enriquecedora que nos perm
 
 ---
 
-## Desarrolladoras <img src="https://github.com/user-attachments/assets/66023c24-8f7e-4874-b2ba-d7eb7c1daf00" width="80" style="vertical-align: middle;" />
-
-
+## <img src="https://github.com/user-attachments/assets/66023c24-8f7e-4874-b2ba-d7eb7c1daf00" width="60" /> Desarrolladoras
 
 Este proyecto fue desarrollado por Dafne Julieth Cortés y Johana Jazmín Saavedra, estudiantes de tercer semestre en Técnica profesional en programación de aplicaciones de software de la Fundación Universitaria Compensar. Con una participación activa en la creación del juego, diseño de pruebas automatizadas, documentación y presentación del proyecto final.
 
@@ -387,7 +345,6 @@ Este proyecto fue desarrollado por Dafne Julieth Cortés y Johana Jazmín Saaved
 [🔼 Volver al índice](#-índice)
 
 ---
-
 
 
 
